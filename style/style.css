@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Stratos";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Stratos"),
+        url("/SkyproProjects/font/stratosskyengweb-regular.woff2") format("woff2"),
+        url("/SkyproProjects/font/stratosskyengweb-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Stratos";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Stratos"),
+        url("/SkyproProjects/font/stratosskyengweb-bold.woff2") format("woff2"),
+        url("/SkyproProjects/font/stratosskyengweb-bold.woff") format("woff");
+}
+
+body {
+    font-family: "Stratos", "Arial", sans-serif;
+    font-weight: 400;
+}
