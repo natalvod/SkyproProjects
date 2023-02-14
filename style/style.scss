@@ -1,0 +1,157 @@
+:root {
+    --bg-color: #E4FBFF;
+    --bg-color-button: #99D100;
+    --color: #fff;
+    --bg-form: #FF6D00;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.button {
+    background-color: var(--bg-color-button);
+    color: var(--color);
+}
+
+@font-face {
+    font-family: "Stratos";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Stratos"),
+        url("/SkyproProjects/font/stratosskyengweb-regular.woff2") format("woff2"),
+        url("/SkyproProjects/font/stratosskyengweb-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Stratos";
+    font-weight: 700;
+    font-style: normal;
+    src: local("Stratos"),
+        url("/SkyproProjects/font/stratosskyengweb-bold.woff2") format("woff2"),
+        url("/SkyproProjects/font/stratosskyengweb-bold.woff") format("woff");
+}
+
+body {
+    font-family: "Stratos", "Arial", sans-serif;
+    font-weight: 400;
+}
+
+.center {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top__content {
+    background-color: var(--bg-color);
+    padding-top: 15px;
+}
+
+.header {
+    &__lable {
+        color: #000000;
+        background-color: #fff;
+        border-radius: 630px;
+        padding: 4px 8px 6px 8px;
+    }
+}
+
+.section {
+    &--top {
+        background-color: var(--bg-color);
+    }
+
+    &__title {
+        font-size: 38px;
+    }
+
+    &__link {
+        display: block;
+        padding: 14px 32px 14px 32px;
+        border-radius: 12px;
+        text-align: center;
+    }
+}
+
+.text {
+    &__item {
+        display: inline-block;
+        margin-right: 2px;
+
+        &--accent {
+            transform: rotate(-3deg);
+        }
+    }
+}
+
+.main {
+    &__list {
+        padding-left: 0px;
+    }
+}
+
+.form {
+    &--main {
+        background-color: var(--bg-form);
+        border-radius: 12px;
+        color: var(--color);
+        margin: 0px;
+        padding-left: 22px;
+        padding-right: 22px;
+        padding-top: 16px;
+        padding-bottom: 26px;
+    }
+
+    &__heading {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 18px;
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+    &__input {
+        padding: 9px 19px 9px 19px;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+        font-family: "Stratos", "Arial", sans-serif;
+        &::placeholder{
+            color: #000000;
+            font-size: 16px;
+        }
+    }
+
+    &__button{
+        width: 256px;
+        height: 44px;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+    }
+
+    &__text{
+        font-size: 9px;
+    }
+
+    &__link {
+        padding-bottom: 2px;
+        border-bottom: 1px solid var(--color);
+    }
+}

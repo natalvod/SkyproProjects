@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div>
-        <a class="header__logo" href="#"
-          ><img src="./img/logo-header.svg" alt="Логотип Skypro"
-        /></a>
-        <a class="header__lable" href="#">от Skyeng</a>
-      </div>
-    </header>
-    <main>
+    <div class="top__content center">
+      <header class="header">
+        <div>
+          <a class="header__logo" href="#"
+            ><img src="./img/logo-header.svg" alt="Логотип Skypro"
+          /></a>
+          <a class="header__lable" href="#">от Skyeng</a>
+        </div>
+      </header>
       <section class="section section--top">
         <h1 class="section__title">
           Как сменить профессию и стать IT-специалистом за 6 месяцев
@@ -28,6 +28,8 @@
         </p>
         <a class="section__link button" href="#">Получить методичку</a>
       </section>
+    </div>
+    <main class="main__content center">
       <section class="section main">
         <ol class="main__list">
           <li class="main__item">
@@ -38,11 +40,14 @@
             </p>
             <form class="list-item__form form--main" action="#">
               <h4 class="form__heading">Заполните форму</h4>
-              <input class="form__input" type="text" placeholder="Имя" />
-              <input class="form__input" type="email" placeholder="Эл.почта" />
-              <button class="form__button button" type="submit">
-                Получить методичку
-              </button>
+              <div class="form__wrapper">
+                <input class="form__input" type="text" placeholder="Имя" />
+                <input class="form__input" type="email" placeholder="Эл.почта" />
+                <button class="form__button button" type="submit">
+                  Получить методичку
+                </button>
+              </div>
+              <p class="form__text">Оставляя заявку, вы принимаете <a class ="form__link" href="#">условия соглашения</a></p>
             </form>
           </li>
           <li class="main__item">
@@ -146,21 +151,37 @@
 
             <ul class="main__materials materials">
               <li class="materials__item">
-                <img class="materials__img" src="/SkyproProjects/img/confederate-hat.png" alt="Шапка выпускника" />
+                <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/confederate-hat.png"
+                  alt="Шапка выпускника"
+                />
                 <p class="materials__text">Подборки образовательных курсов</p>
               </li>
               <li class="materials__item">
-                <img class="materials__img" src="/SkyproProjects/img/book.png" alt="Книга" />
+                <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/book.png"
+                  alt="Книга"
+                />
                 <p class="materials__text">Специализированная литература</p>
               </li>
               <li class="materials__item">
-                <img class="materials__img" src="/SkyproProjects/img/microphone.png" alt="Микрофон" />
+                <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/microphone.png"
+                  alt="Микрофон"
+                />
                 <p class="materials__text">
                   Подкасты с экспертами IT-индустрии
                 </p>
               </li>
               <li class="materials__item">
-                <img class="materials__img" src="/SkyproProjects/img/phone.png" alt="Смартфон" />
+                <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/phone.png"
+                  alt="Смартфон"
+                />
                 <p class="materials__text">
                   Телеграм-каналы для каждой профессии
                 </p>
@@ -191,7 +212,7 @@
           Наши методисты собрали всю полезную информацию о том, как сменить
           профессию и начать свой путь в IT
         </p>
-        <form class="section-form__form form--main" action="#">
+        <form class="section-form__form form" action="#">
           <h4 class="form__heading">Заполните форму</h4>
           <input class="form__input" type="text" placeholder="Имя" />
           <input class="form__input" type="email" placeholder="Эл.почта" />
@@ -209,28 +230,46 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer center">
       <div class="footer__wrapper">
         <div class="footer__box box-inform">
           <div class="footer__info info-about">
             <p class="info-about__text">
-              <span class="info-about__span--first">Мы используем весь образовательный опыт</span>
-              <img class="info-about__img" src="./img/logo-skyeng-footer.svg" alt="Школа Skyeng" />
-              <span class="info-about__span">— одной из крупнейших онлайн-школ в России и СНГ</span>
+              <span class="info-about__span--first"
+                >Мы используем весь образовательный опыт</span
+              >
+              <img
+                class="info-about__img"
+                src="./img/logo-skyeng-footer.svg"
+                alt="Школа Skyeng"
+              />
+              <span class="info-about__span"
+                >— одной из крупнейших онлайн-школ в России и СНГ</span
+              >
             </p>
           </div>
           <div class="footer__info info-contacts">
-            <a class="info-contacts__link" href="mailto:skypro@skyeng.ru">skypro@skyeng.ru</a>
-            <a class="info-contacts__link" href="tel:+74951378599">+7 495 137-85-99</a>
+            <a class="info-contacts__link" href="mailto:skypro@skyeng.ru"
+              >skypro@skyeng.ru</a
+            >
+            <a class="info-contacts__link" href="tel:+74951378599"
+              >+7 495 137-85-99</a
+            >
           </div>
         </div>
         <div class="footer__box box-advantage">
-          <p class="box-advantage_text box-advantage_text--first">Собственную интерактивную платформу</p>
-          <p class="box-advantage_text box-advantage_text--second">Программы обучения, ориентированные на результат</p>
-          <p class="box-advantage_text box-advantage_text--third">Современный контент</p>
+          <p class="box-advantage_text box-advantage_text--first">
+            Собственную интерактивную платформу
+          </p>
+          <p class="box-advantage_text box-advantage_text--second">
+            Программы обучения, ориентированные на результат
+          </p>
+          <p class="box-advantage_text box-advantage_text--third">
+            Современный контент
+          </p>
         </div>
         <div class="footer__box box-bottom">
-          <p>© Skypro 2021 </p>
+          <p>© Skypro 2021</p>
           <a class="box-bottom__link" href="#">Программа курса</a>
           <a class="box-bottom__link" href="#">Политика обработки данных</a>
           <a class="box-bottom__link" href="#">Условия использования</a>
