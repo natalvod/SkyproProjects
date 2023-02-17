@@ -1,7 +1,10 @@
 :root {
-    --bg-color: #E4FBFF;
-    --bg-color-button: #99D100;
-    --color: #fff;
+    --bg-top: #E4FBFF;
+    --bg-button: #99D100;
+    --color-button: #fff;
+    --color-text-form: #fff;
+    --color-placeholder: #000;
+    --color-lable: #000;
     --bg-form: #FF6D00;
 }
 
@@ -13,7 +16,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--color);
+    color: var(--color-button);
 }
 
 ul,
@@ -22,8 +25,8 @@ ol {
 }
 
 .button {
-    background-color: var(--bg-color-button);
-    color: var(--color);
+    background-color: var(--bg-button);
+    color: var(--color-button);
 }
 
 @font-face {
@@ -54,16 +57,19 @@ body {
     padding-right: 10px;
 }
 
-.top__content {
-    background-color: var(--bg-color);
-    padding-top: 15px;
+.content {
+    &--top {
+        background-color: var(--bg-top);
+        padding-top: 15px;
+        padding-bottom: 13px;
+    }
 }
 
 .header {
     &__lable {
-        color: #000000;
+        color: var(--color-lable);
         background-color: #fff;
-        border-radius: 630px;
+        border-radius: 28px;
         padding: 4px 8px 6px 8px;
     }
 }
@@ -75,6 +81,11 @@ body {
 
     &__title {
         font-size: 38px;
+        max-width: 283px;
+    }
+
+    &__text {
+        max-width: 283px;
     }
 
     &__link {
@@ -82,6 +93,7 @@ body {
         padding: 14px 32px 14px 32px;
         border-radius: 12px;
         text-align: center;
+        max-width: 300px;
     }
 }
 
@@ -106,7 +118,7 @@ body {
     &--main {
         background-color: var(--bg-form);
         border-radius: 12px;
-        color: var(--color);
+        color: var(--color-text-form);
         margin: 0px;
         padding-left: 22px;
         padding-right: 22px;
@@ -121,10 +133,10 @@ body {
         margin-bottom: 18px;
     }
 
-    &__wrapper{
+    &__wrapper {
         display: flex;
         flex-direction: column;
-        row-gap: 14px;
+        gap: 14px;
     }
 
     &__input {
@@ -133,13 +145,14 @@ body {
         outline: none;
         border: none;
         font-family: "Stratos", "Arial", sans-serif;
-        &::placeholder{
-            color: #000000;
+
+        &::placeholder {
+            color: var(--color-placeholder);
             font-size: 16px;
         }
     }
 
-    &__button{
+    &__button {
         width: 256px;
         height: 44px;
         border-radius: 12px;
@@ -147,12 +160,25 @@ body {
         border: none;
     }
 
-    &__text{
+    &__text {
         font-size: 9px;
     }
 
     &__link {
         padding-bottom: 2px;
-        border-bottom: 1px solid var(--color);
+        border-bottom: 1px solid var(--color-button);
+    }
+}
+
+.proflist {
+    &__box {
+        display: flex;
+        flex-direction: column;
+        max-width: 194px;
+        align-items: center;
+    }
+
+    &__defin {
+        margin: 0px;
     }
 }

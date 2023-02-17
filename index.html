@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div class="top__content center">
+    <div class="content content--top center">
       <header class="header">
         <div>
           <a class="header__logo" href="#"
@@ -29,8 +29,8 @@
         <a class="section__link button" href="#">Получить методичку</a>
       </section>
     </div>
-    <main class="main__content center">
-      <section class="section main">
+    <main class="content__main center">
+      <section class="main">
         <ol class="main__list">
           <li class="main__item">
             <h3 class="main__heading">Отправьте заявку на методичку</h3>
@@ -38,7 +38,7 @@
               Если вы хотите стать IT-специалистом, но не знаете, с чего начать,
               и боитесь потратить время на ненужное.
             </p>
-            <form class="list-item__form form--main" action="#">
+            <form class="form form--main" action="#">
               <h4 class="form__heading">Заполните форму</h4>
               <div class="form__wrapper">
                 <input class="form__input" type="text" placeholder="Имя" />
@@ -155,6 +155,7 @@
                   class="materials__img"
                   src="/SkyproProjects/img/confederate-hat.png"
                   alt="Шапка выпускника"
+                  width="77px" height="77px"
                 />
                 <p class="materials__text">Подборки образовательных курсов</p>
               </li>
@@ -163,6 +164,7 @@
                   class="materials__img"
                   src="/SkyproProjects/img/book.png"
                   alt="Книга"
+                  width="71px" height="83px"
                 />
                 <p class="materials__text">Специализированная литература</p>
               </li>
@@ -171,6 +173,7 @@
                   class="materials__img"
                   src="/SkyproProjects/img/microphone.png"
                   alt="Микрофон"
+                  width="71px" height="71px"
                 />
                 <p class="materials__text">
                   Подкасты с экспертами IT-индустрии
@@ -181,6 +184,7 @@
                   class="materials__img"
                   src="/SkyproProjects/img/phone.png"
                   alt="Смартфон"
+                  width="71px" height="71px"
                 />
                 <p class="materials__text">
                   Телеграм-каналы для каждой профессии
@@ -190,7 +194,7 @@
           </li>
         </ol>
       </section>
-      <section class="section resume">
+      <section class="resume">
         <h3 class="resume__heading">Что вы получите</h3>
         <ul class="resume__list">
           <li class="resume__item">
@@ -206,23 +210,23 @@
           </li>
         </ul>
       </section>
-      <section class="section section-form">
+      <section class="section-form">
         <h3 class="section-form__heading">Бесплатное методическое пособие</h3>
         <p>
           Наши методисты собрали всю полезную информацию о том, как сменить
           профессию и начать свой путь в IT
         </p>
-        <form class="section-form__form form" action="#">
-          <h4 class="form__heading">Заполните форму</h4>
-          <input class="form__input" type="text" placeholder="Имя" />
-          <input class="form__input" type="email" placeholder="Эл.почта" />
-          <button class="form__button button" type="submit">
+        <form class="section-form__form form form--bottom" action="#">
+          <h4 class="form__heading--bottom">Заполните форму</h4>
+          <input class="form__input--bottom" type="text" placeholder="Имя" />
+          <input class="form__input--bottom" type="email" placeholder="Эл.почта" />
+          <button class="form__button--bottom button" type="submit">
             Получить методичку
           </button>
         </form>
-        <section class="section discount">
-          <p class="discount_value">10%</p>
-          <span class="discount_text">скидка на обучение в</span>
+        <section class="discount">
+          <p class="discount__value">10%</p>
+          <span class="discount__text">скидка на обучение в</span>
           <a href="#"
             ><img src="./img/logo-header.svg" alt="Логотип Skypro"
           /></a>
@@ -235,7 +239,7 @@
         <div class="footer__box box-inform">
           <div class="footer__info info-about">
             <p class="info-about__text">
-              <span class="info-about__span--first"
+              <span class="info-about__part--first"
                 >Мы используем весь образовательный опыт</span
               >
               <img
@@ -243,7 +247,7 @@
                 src="./img/logo-skyeng-footer.svg"
                 alt="Школа Skyeng"
               />
-              <span class="info-about__span"
+              <span class="info-about__part"
                 >— одной из крупнейших онлайн-школ в России и СНГ</span
               >
             </p>
