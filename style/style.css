@@ -6,6 +6,7 @@
   --color-placeholder: #000;
   --color-lable: #000;
   --bg-form: #FF6D00;
+  --padding-wrapper: 10px;
 }
 
 body {
@@ -46,15 +47,18 @@ body {
   font-weight: 400;
 }
 
-.center {
-  padding-left: 10px;
-  padding-right: 10px;
+.content {
+  padding-left: var(--padding-wrapper);
+  padding-right: var(--padding-wrapper);
 }
-
 .content--top {
   background-color: var(--bg-top);
   padding-top: 15px;
   padding-bottom: 13px;
+}
+.content__main {
+  padding-left: var(--padding-wrapper);
+  padding-right: var(--padding-wrapper);
 }
 
 .header__lable {
@@ -153,4 +157,9 @@ body {
 }
 .proflist__defin {
   margin: 0px;
+}
+
+.footer {
+  padding-left: var(--padding-wrapper);
+  padding-right: var(--padding-wrapper);
 }/*# sourceMappingURL=style.css.map */
