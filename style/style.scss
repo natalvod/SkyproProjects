@@ -15,6 +15,12 @@ body {
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+    margin: 0px;
+}
+
 a {
     text-decoration: none;
     color: var(--color-button);
@@ -51,6 +57,9 @@ ol {
 body {
     font-family: "Stratos", "Arial", sans-serif;
     font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: -0.015px;
 }
 
 
@@ -58,11 +67,13 @@ body {
 .content {
     padding-left: var(--padding-wrapper);
     padding-right: var(--padding-wrapper);
+
     &--top {
         background-color: var(--bg-top);
         padding-top: 15px;
         padding-bottom: 13px;
     }
+
     &__main {
         padding-left: var(--padding-wrapper);
         padding-right: var(--padding-wrapper);
@@ -70,22 +81,39 @@ body {
 }
 
 .header {
+    margin-bottom: 3px;
+
     &__lable {
+        display: inline-block;
+        vertical-align: middle;
         color: var(--color-lable);
         background-color: #fff;
         border-radius: 28px;
         padding: 4px 8px 6px 8px;
+        margin-left: 7px;
+        font-size: 14px;
+        letter-spacing: -0.035px;
+    }
+
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
 .section {
     &--top {
         background-color: var(--bg-color);
+        overflow: hidden;
+        padding-top: 20px;
     }
 
     &__title {
         font-size: 38px;
         max-width: 283px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 13px;
     }
 
     &__text {
@@ -107,7 +135,25 @@ body {
         margin-right: 2px;
 
         &--accent {
+            position: relative;
+            z-index: 1;
             transform: rotate(-3deg);
+            padding-left: 6px;
+            padding-right: 6px;
+            &::before{
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background: url(../img/text-accent.svg);
+                background-position: center;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                z-index: -1;
+                left: 0px;
+                
+            }
         }
     }
 }
@@ -191,6 +237,7 @@ body {
         margin: 0px;
     }
 }
+
 .footer {
     padding-left: var(--padding-wrapper);
     padding-right: var(--padding-wrapper);
