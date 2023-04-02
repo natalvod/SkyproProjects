@@ -7,6 +7,7 @@
   --color-lable: #000;
   --bg-form: #FF6D00;
   --padding-wrapper: 10px;
+  --content-width: 1170px;
 }
 
 body {
@@ -89,27 +90,36 @@ body {
   vertical-align: middle;
 }
 
+.section {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
 .section--top {
-  background-color: var(--bg-color);
   overflow: hidden;
   padding-top: 20px;
 }
 .section__title {
   font-size: 38px;
-  max-width: 283px;
   font-weight: 400;
   line-height: 100%;
   margin-bottom: 13px;
 }
 .section__text {
-  max-width: 283px;
+  margin-bottom: 21px;
+  margin-top: 0px;
 }
 .section__link {
   display: block;
   padding: 14px 32px 14px 32px;
   border-radius: 12px;
   text-align: center;
-  max-width: 300px;
+  max-width: 238px;
+  letter-spacing: -0.6px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 135%;
+  margin-bottom: 17px;
 }
 
 .text__item {
@@ -137,8 +147,35 @@ body {
   left: 0px;
 }
 
+.line-top {
+  transform: translate(0, -41px);
+  margin-bottom: 11px;
+  width: 100%;
+  height: auto;
+  min-width: 455;
+  min-width: 455px;
+}
+
 .main__list {
   padding-left: 0px;
+}
+.main__heading {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 105%;
+  letter-spacing: -0.05px;
+  max-width: 294px;
+  margin-left: 19px;
+  margin-bottom: 15px;
+}
+.main__text {
+  max-width: 279px;
+  margin-left: 19px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: -0.3px;
+  margin-top: 0px;
 }
 
 .form--main {
@@ -209,4 +246,33 @@ body {
 .footer {
   padding-left: var(--padding-wrapper);
   padding-right: var(--padding-wrapper);
+}
+
+@media (min-width: 1380px) {
+  .section__title {
+    font-size: 101px;
+    line-height: 90%;
+    margin-top: 78px;
+    letter-spacing: -1.02px;
+    margin-bottom: 50px;
+  }
+  .section__text {
+    font-size: 32px;
+    letter-spacing: -0.05px;
+    max-width: 848px;
+  }
+  .section__link {
+    margin-top: 43px;
+    margin-bottom: 236px;
+  }
+  .section--top {
+    position: relative;
+  }
+  .line-top {
+    position: absolute;
+  }
+  .text__item--accent {
+    padding-top: 6px;
+    padding-bottom: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
