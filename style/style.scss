@@ -139,7 +139,7 @@ body {
         font-weight: 400;
         font-size: 20px;
         line-height: 135%;
-        margin-bottom: 17px;
+        margin-bottom: 4px;
     }
 }
 
@@ -174,12 +174,12 @@ body {
 }
 
 .line-top {
-    transform: translate(0, -41px);
-    margin-bottom: 11px;
+    transform: translate(0, -11px);
+    margin-bottom: 41px;
     width: 100%;
     height: auto;
     min-width: 455;
-    min-width: 455px;
+    min-width: 305px;
 }
 
 .main {
@@ -218,7 +218,7 @@ body {
         padding-left: 22px;
         padding-right: 22px;
         padding-top: 16px;
-        padding-bottom: 26px;
+        padding-bottom: 15px;
         max-width: 300px;
     }
 
@@ -253,6 +253,8 @@ body {
         border-radius: 12px;
         outline: none;
         border: none;
+        margin-top: 10px;
+        margin-bottom: -10px;
     }
 
     &__text {
@@ -364,7 +366,7 @@ body {
 
         &--marketolog {
             background: #40E687;
-            transform: translate(97px,28px) rotate(-24deg);
+            transform: translate(97px, 28px) rotate(-24deg);
             padding-left: 7px;
             padding-right: 4px;
             max-width: 180px;
