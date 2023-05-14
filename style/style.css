@@ -1,11 +1,11 @@
 :root {
-  --bg-top: #E4FBFF;
-  --bg-button: #99D100;
+  --bg-top: #e4fbff;
+  --bg-button: #99d100;
   --color-button: #fff;
   --color-text-form: #fff;
   --color-placeholder: #000;
   --color-lable: #000;
-  --bg-form: #FF6D00;
+  --bg-form: #ff6d00;
   --padding-wrapper: 10px;
   --content-width: 1170px;
 }
@@ -303,21 +303,75 @@ body {
   background-size: contain;
   z-index: -1;
 }
+.separator--hat {
+  background-image: url(../img/confederate-hat-rotate.png);
+  height: 150px;
+  margin-left: -30px;
+}
+.separator--hat::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../img/line-hat.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  transform: translate(30px, 0);
+}
 
+.proflist {
+  min-height: 604px;
+  margin-bottom: -40px;
+  position: relative;
+}
+.proflist::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../img/line-prof.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  transform: translate(20px, -70px);
+}
 .proflist__box {
   border-radius: 75px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 .proflist__box--marketolog {
-  background: #40E687;
+  background: #40e687;
   transform: translate(97px, 28px) rotate(-24deg);
   padding-left: 7px;
   padding-right: 4px;
   max-width: 180px;
+}
+.proflist__box--menage {
+  background: #00c1ff;
+  transform: translate(-10px, 50px) rotate(34deg);
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 280px;
+}
+.proflist__box--engineer {
+  background: #ff64b0;
+  transform: translate(-9px, 131px) rotate(-36.24deg);
+  max-width: 180px;
+}
+.proflist__box--analyst {
+  background: #ff6d00;
+  transform: translate(140px, 280px) rotate(-9.98deg);
+  max-width: 169px;
+}
+.proflist__box--web {
+  background: #ad61ff;
+  transform: translate(39px, 220px) rotate(19deg);
+  max-width: 267px;
 }
 .proflist__term {
   font-size: 27px;
