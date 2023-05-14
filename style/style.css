@@ -57,6 +57,21 @@ body {
   letter-spacing: -0.015px;
 }
 
+@media (min-width: 1380px) {
+  .column2-desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
+}
+
+.wrap {
+  max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content {
   padding-left: var(--padding-wrapper);
   padding-right: var(--padding-wrapper);
@@ -159,6 +174,11 @@ body {
 .main__list {
   padding-left: 0px;
 }
+@media (min-width: 1380px) {
+  .main__item {
+    margin-top: 113px;
+  }
+}
 .main__heading {
   font-weight: 400;
   font-size: 28px;
@@ -169,6 +189,17 @@ body {
   margin-bottom: 15px;
   margin-top: 35px;
 }
+@media (min-width: 1380px) {
+  .main__heading {
+    font-size: 64px;
+    line-height: 72px;
+    margin-left: 0;
+    margin-bottom: 25px;
+    margin-top: 0;
+    margin-right: 0;
+    max-width: initial;
+  }
+}
 .main__text {
   max-width: 279px;
   margin-left: 19px;
@@ -177,6 +208,14 @@ body {
   line-height: 125%;
   letter-spacing: -0.3px;
   margin-top: 0px;
+}
+@media (min-width: 1380px) {
+  .main__text {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0;
+    max-width: initial;
+  }
 }
 
 .form--main {
@@ -189,6 +228,11 @@ body {
   padding-top: 16px;
   padding-bottom: 15px;
   max-width: 300px;
+}
+@media (min-width: 1380px) {
+  .form--main {
+    --bg-form: var(--bg-top);
+  }
 }
 .form__heading {
   font-size: 20px;
@@ -287,17 +331,30 @@ body {
   background-size: contain;
 }
 .separator--envelope {
-  background-image: url(../img/letter.png);
+  --height: 150px;
+  --image-url: url(../img/letter.png);
+  --image-url-line: url(../img/line-small.svg);
+  background-image: var(--image-url);
   margin-top: -10px;
   margin-left: 30px;
   margin-bottom: -40px;
-  height: 150px;
+  height: var(--height);
+}
+@media (min-width: 1380px) {
+  .separator--envelope {
+    --height: 154px;
+    --image-url: url(../img/letter.png);
+    --image-url-line: url(../img/line-small.svg);
+    background-position-x: 39%;
+    background-size: 218px;
+    margin-left: 0;
+  }
 }
 .separator--envelope::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../img/line-small.svg);
+  background-image: var(--image-url-line);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
