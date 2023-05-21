@@ -1,12 +1,529 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="content content--top">
+      <header class="header">
+        
+          <a class="header__logo" href="#"
+            ><img src="./img/logo-header.svg" width="89" height="13" alt="Логотип Skypro"
+          /></a>
+          <a class="header__lable" href="#">от Skyeng</a>
+      
+      </header>
+      <section class="section section--top">
+        <h1 class="section__title">
+          Как сменить профессию и стать IT-специалистом за 6 месяцев
+        </h1>
+        <p class="section__text text">
+          В нашем
+          <span class="text__item text__item--accent">бесплатном</span
+          >методическом пособии рассказываем обо всех этапах смены работы
+        </p>
+        <img class="line-top" src="./img/line.svg" width="455" height="101" alt="линия">
+        <a class="section__link button" href="#">Получить методичку</a>
+      </section>
+    </div>
+    <main class="content__main">
+      <section class="main wrap">
+        <ol class="main__list">
+          <li class="main__item column2-desk">
+            <div>
+              <h3 class="main__heading">Отправьте заявку на методичку</h3>
+              <p class="main__text">
+                Если вы хотите стать IT-специалистом, но не знаете, с чего начать,
+                и боитесь потратить время на ненужное.
+              </p>
+            </div>
+            <form class="form form--main" action="#">
+              <h4 class="form__heading">Заполните форму</h4>
+              <div class="form__wrapper">
+                <input class="form__input" type="text" placeholder="Имя" />
+                <input
+                  class="form__input"
+                  type="email"
+                  placeholder="Эл.почта"
+                />
+                <button class="form__button button" type="submit">
+                  Получить методичку
+                </button>
+              </div>
+              <p class="form__text">
+                Оставляя заявку, вы принимаете
+                <a class="form__link" href="#">условия соглашения</a>
+              </p>
+            </form>
+          </li>
+          <li class="separator separator--envelope">
+          </li>
+          <li class="main__item">
+            <h3 class="main__heading">Получите методичку</h3>
+            <p class="main__text">
+              На вашу эл. почту мы пришлем методичку с необходимой информацией и
+              инструкцией
+            </p>
+          </li>
+          <li class="main__item">
+            <h3 class="main__heading">Выберите профессию</h3>
+            <p class="main__text text-main">
+              В методичке вы найдете
+              <span class="text-main__item"
+                >самые актуальные и высокооплачиваемые профессии</span
+              >, которые под силу освоить каждому
+            </p>
+            <dl class="main__proflist proflist">
+              <div class="proflist__box proflist__box--marketolog">
+                <dt class="proflist__term">маркетологи</dt>
+                <dd class="proflist__defin">9762 вакансий на hh</dd>
+              </div>
+              <div class="proflist__box proflist__box--analyst">
+                <dt class="proflist__term">аналитики</dt>
+                <dd class="proflist__defin">39 849 вакансий на hh</dd>
+              </div>
+              <div class="proflist__box proflist__box--menage">
+                <dt class="proflist__term">продакт-менеджеры</dt>
+                <dd class="proflist__defin">3742 вакансий на hh</dd>
+              </div>
+              <div class="proflist__box proflist__box--engineer">
+                <dt class="proflist__term">QA инженер</dt>
+                <dd class="proflist__defin">8095 вакансий на hh</dd>
+              </div>
+              <div class="proflist__box proflist__box--web">
+                <dt class="proflist__term">веб-разработчики</dt>
+                <dd class="proflist__defin">3042 вакансий на hh</dd>
+              </div>
+            </dl>
+          </li>
+          <li class="main__item">
+            <h3 class="main__heading">Прокачивайте навыки из списка</h3>
+            <div class="main__text-box">
+              <p class="main__text main__text--left text-main">
+                Мы уже
+                <span class="text-main__item"
+                  >привлекли экспертов и исследовали</span
+                >, какие навыки актуальны для каждого направления
+              </p>
+              <p class="main__text text-main">
+                Из методички вы
+                <span class="text-main__item"
+                  >узнаете, как быстро освоить hard skills</span
+                >, и что для этого нужно
+              </p>
+            </div>
+            <ul class="main__skills skills">
+              <li class="skills__item">
+                <svg class="skills__item-icon">
+                  <use xlink:href="./img/sprite.svg#check-mark"></use>
+                </svg>
+                  Строить диаграммы и графики в Power BI
+              </li>
+              <li class="skills__item">
+                <svg class="skills__item-icon">
+                  <use xlink:href="./img/sprite.svg#check-mark"></use>
+                </svg>
+                  Подбирать метрики под запрос заказчика               
+              </li>
+              <li class="skills__item">
+                <svg class="skills__item-icon">
+                  <use xlink:href="./img/sprite.svg#check-mark"></use>
+                </svg>               
+                  Проводить A/B-тестирования               
+              </li>
+              <li class="skills__item">
+                <svg class="skills__item-icon">
+                  <use xlink:href="./img/sprite.svg#check-mark"></use>
+                </svg>             
+                  Писать SQL-запросы   
+              </li>
+              <li class="skills__item">
+                <svg class="skills__item-icon">
+                  <use xlink:href="./img/sprite.svg#check-mark"></use>
+                </svg>                
+                  Анализировать данные в Excel
+              </li>
+              <li class="skills__item"> 
+                <svg class="skills__item-icon">
+                  <use xlink:href="./img/sprite.svg#check-mark"></use>
+                </svg>              
+                  Выгружать данные для целей клиента               
+              </li>
+              <li class="skills__item">   
+                <svg class="skills__item-icon">
+                  <use xlink:href="./img/sprite.svg#check-mark"></use>
+                </svg>         
+                  Владеть языком программирования Python или R
+              </li>
+            </ul>
+          </li>
+          <li class="separator separator--hat">
+          </li>
+
+          <!-- <picture> 
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/confederate-hat-big1.avif"
+              type="image/avif"
+            />
+
+            <source
+              srcset="./img/confederate-hat1.avif"
+              type="image/avif"
+            />
+
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/confederate-hat-big-webp.webp"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/confederate-hat-webp.webp"
+              type="image/webp"
+            /> 
+
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/confederate-hat-big.png"
+              type="image/png"
+            />
+            
+            <img
+              src="./img/confederate-hat-big.png"
+              alt="Шляпа выпускника"
+              width="77"
+              height="77"
+            />
+          </picture> -->
+
+          <li class="main__item">
+            <h3 class="main__heading">Развивайте soft skills</h3>
+            <p class="main__text text-main">
+              <span class="text-main__item">Собрали весь полезный материал</span
+              >, чтобы вы могли развивать soft skills
+            </p>
+
+            <ul class="main__materials materials">
+              <li class="materials__item">
+               
+                <picture> 
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="./img/confederate-hat-big1.avif"
+                    type="image/avif"
+                  />
+
+                  <source
+                    srcset="./img/confederate-hat1.avif"
+                    type="image/avif"
+                  />
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="./img/confederate-hat-big-webp.webp"
+                    type="image/webp"
+                  />
+
+                  <source
+                    srcset="./img/confederate-hat-webp.webp"
+                    type="image/webp"
+                  /> 
+
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="./img/confederate-hat-big.png"
+                    type="image/png"
+                  />
+                  
+                  <img
+                    src="./img/confederate-hat-big.png"
+                    alt="Шляпа выпускника"
+                    width="77"
+                    height="77"
+                  />
+                </picture>
+<!-- <img src="./img/" alt="" />
+                <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/confederate-hat.png"
+                  alt="Шапка выпускника"
+                  width="77px"
+                  height="77px"
+                /> -->
+                <p class="materials__text">Подборки образовательных курсов</p>
+              </li>
+              <li class="materials__item">
+               
+                <picture>
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/book-big-avif2.avif"
+                      type="image/avif"
+                  > 
+
+                  <source srcset="./img/book-avif.avif" type="image/avif"> 
+              
+           
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/book-big-webp.webp"
+                      type="image/webp"
+                  >
+              
+                  <source
+                      srcset="./img/book-webp.webp"
+                      type="image/webp"
+                  >
+              
+              
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/book-big.png"
+                      type="image/png"
+                  >
+              
+                  <img src="./img/book.png" alt="Книга" width="60" height="83">
+              </picture> 
+<!-- 
+                <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/book.png"
+                  alt="Книга"
+                  width="71px"
+                  height="83px"
+                /> -->
+                <p class="materials__text">Специализированная литература</p>
+              </li>
+              <li class="materials__item">
+              
+                <picture>
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/microphone-big-avif.avif"
+                      type="image/avif"
+                  >
+              
+                  <source srcset="./img/microphone-avif.avif" type="image/avif">
+              
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/microphone-big-webp.webp"
+                      type="image/webp"
+                  >
+              
+                  <source
+                      srcset="./img/microphone-webp.webp"
+                      type="image/webp"
+                  >
+              
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/microphone-big.png"
+                      type="image/png"
+                  >
+                
+                  <img src="./img/microphone.png" alt="Микрофон" width="71" height="71">
+              </picture>
+
+                <!-- <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/microphone.png"
+                  alt="Микрофон"
+                  width="71px"
+                  height="71px"
+                /> -->
+                <p class="materials__text">
+                  Подкасты с экспертами IT-индустрии
+                </p>
+              </li>
+              <li class="materials__item">
+              
+                <picture>
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/phone-big-avif.avif"
+                      type="image/avif"
+                  >
+               
+                  <source srcset="./img/phone-avif.avif" type="image/avif">
+              
+              
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/phone-big-webp.webp"
+                      type="image/webp"
+                  >
+                
+                  <source
+                      srcset="./img/phone_1-webp.webp"
+                      type="image/webp"
+                  > 
+               
+                  <source
+                      media="(min-width: 1440px)"
+                      srcset="./img/phone-big.png"
+                      type="image/png"
+                  >
+                
+                  <img src="./img/phone.png" alt="Смартфон" width="71" height="71">
+              </picture>
+
+                <!-- <img
+                  class="materials__img"
+                  src="/SkyproProjects/img/phone.png"
+                  alt="Смартфон"
+                  width="71px"
+                  height="71px"
+                /> -->
+                <p class="materials__text">
+                  Телеграм-каналы для каждой профессии
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section class="resume">
+        <h3 class="resume__heading">Что вы получите</h3>
+
+        <!-- <img src="" alt="" /> -->
+
+        <picture>
+          <source
+              media="(min-width: 1440px)"
+              srcset="./img/rocket-big-avif.avif"
+              type="image/avif"
+          >
+       
+          <source srcset="./img/rocket-avif.avif" type="image/avif">
+      
+      
+          <source
+              media="(min-width: 1440px)"
+              srcset="./img/rocket-big-webp.webp"
+              type="image/webp"
+          >
+        
+          <source
+              srcset="./img/rocket-webp.webp"
+              type="image/webp"
+          > 
+       
+          <source
+              media="(min-width: 1440px)"
+              srcset="./img/rocket-big.png"
+              type="image/png"
+          >
+        
+          <img src="./img/rocket.png" alt="Смартфон" width="71" height="71">
+      </picture>
+
+
+        <ul class="resume__list">
+          <li class="resume__item">
+            Узнаете, как сменить профессию за 6 месяцев
+          </li>
+          <li class="resume__item">Какие IT-профессии востребованы на рынке</li>
+          <li class="resume__item">
+            Структурируете информацию о навыках и этапах их освоения
+          </li>
+          <li class="resume__item">
+            Найдете новые каналы для получения самой актуальной информации по
+            выбранной специальности
+          </li>
+        </ul>
+      </section>
+      <section class="section-form">
+        <h3 class="section-form__heading">Бесплатное методическое пособие</h3>
+        <p>
+          Наши методисты собрали всю полезную информацию о том, как сменить
+          профессию и начать свой путь в IT
+        </p>
+        <form class="section-form__form form form--bottom" action="#">
+          <h4 class="form__heading--bottom">Заполните форму</h4>
+          <input class="form__input--bottom" type="text" placeholder="Имя" />
+          <input
+            class="form__input--bottom"
+            type="email"
+            placeholder="Эл.почта"
+          />
+          <button class="form__button--bottom button" type="submit">
+            Получить методичку
+          </button>
+        </form>
+        <div class="discount">
+          <p class="discount__value">10%</p>
+          <svg>
+            <use xlink:href="./img/sprite.svg#discount-bg-star"></use>
+          </svg>
+          <span class="discount__text">скидка на обучение в</span>
+          <a href="#"
+            ><img src="./img/logo-header.svg" alt="Логотип Skypro"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__box box-inform">
+          <div class="footer__info info-about">
+            <p class="info-about__text">
+              <span class="info-about__part--first"
+                >Мы используем весь образовательный опыт</span
+              >
+              <img
+                class="info-about__img"
+                src="./img/logo-skyeng-footer.svg"
+                alt="Школа Skyeng"
+              />
+              <span class="info-about__part"
+                >— одной из крупнейших онлайн-школ в России и СНГ</span
+              >
+            </p>
+          </div>
+          <div class="footer__info info-contacts">
+            <a class="info-contacts__link" href="mailto:skypro@skyeng.ru"
+              >skypro@skyeng.ru</a
+            >
+            <a class="info-contacts__link" href="tel:+74951378599"
+              >+7 495 137-85-99</a
+            >
+          </div>
+        </div>
+        <div class="footer__box box-advantage">
+          <svg>
+            <use xlink:href="./img/sprite.svg#box-advantage_text1-bg"></use>
+            </svg>
+          <svg>
+            <use xlink:href="./img/sprite.svg#box-advantage_text2-bg"></use>
+            </svg>
+          <svg>
+            <use xlink:href="./img/sprite.svg#box-advantage_text3-bg"></use>
+            </svg>
+          <p class="box-advantage_text box-advantage_text--first">
+            Собственную интерактивную платформу
+          </p>
+          <p class="box-advantage_text box-advantage_text--second">
+            Программы обучения, ориентированные на результат
+          </p>
+          <p class="box-advantage_text box-advantage_text--third">
+            Современный контент
+          </p>
+        </div>
+        <div class="footer__box box-bottom">
+          <p>© Skypro 2021</p>
+          <a class="box-bottom__link" href="#">Программа курса</a>
+          <a class="box-bottom__link" href="#">Политика обработки данных</a>
+          <a class="box-bottom__link" href="#">Условия использования</a>
+          <a class="box-bottom__link" href="#">Договор-оферта</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
