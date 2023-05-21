@@ -408,6 +408,14 @@ body {
   padding-right: 4px;
   max-width: 180px;
 }
+@media (min-width: 1380px) {
+  .proflist__box--marketolog {
+    padding-top: 10px;
+    max-width: 336px;
+    height: 87px;
+    transform: translate(919px, -226px) rotate(17.46deg);
+  }
+}
 .proflist__box--menage {
   background: #00c1ff;
   transform: translate(-10px, 50px) rotate(34deg);
@@ -415,28 +423,102 @@ body {
   padding-right: 5px;
   max-width: 280px;
 }
+@media (min-width: 1380px) {
+  .proflist__box--menage {
+    padding-top: 10px;
+    max-width: 496px;
+    height: 87px;
+    transform: translate(675px, -114px) rotate(33.76deg);
+  }
+}
 .proflist__box--engineer {
   background: #ff64b0;
   transform: translate(-9px, 131px) rotate(-36.24deg);
   max-width: 180px;
+}
+@media (min-width: 1380px) {
+  .proflist__box--engineer {
+    transform: translate(342px, -208px) rotate(-34.02deg);
+    max-width: 325px;
+    height: 80px;
+  }
 }
 .proflist__box--analyst {
   background: #ff6d00;
   transform: translate(140px, 280px) rotate(-9.98deg);
   max-width: 169px;
 }
+@media (min-width: 1380px) {
+  .proflist__box--analyst {
+    height: 84px;
+    transform: translate(970px, -140px) rotate(-9.98deg);
+    max-width: 299px;
+  }
+}
 .proflist__box--web {
   background: #ad61ff;
   transform: translate(39px, 220px) rotate(19deg);
   max-width: 267px;
+}
+@media (min-width: 1380px) {
+  .proflist__box--web {
+    transform: translate(39px, -150px) rotate(19deg);
+    max-width: 467px;
+    height: 80px;
+  }
 }
 .proflist__term {
   font-size: 27px;
   line-height: 30px;
   letter-spacing: -0.7px;
 }
+@media (min-width: 1380px) {
+  .proflist__term {
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    letter-spacing: -1.3px;
+  }
+}
 .proflist__defin {
   font-size: 10px;
   line-height: 130%;
   letter-spacing: -0.03px;
+}
+@media (min-width: 1380px) {
+  .proflist__defin {
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.05px;
+  }
+}
+
+.skills {
+  background: #e4fbff;
+  border-radius: 370px;
+  text-align: center;
+  padding: 54px;
+  letter-spacing: -0.05px;
+  color: #000000;
+  line-height: 81px;
+  font-size: 83px;
+  font-weight: 400;
+}
+.skills__item:first-child, .skills__item:last-child {
+  line-height: 51px;
+  font-size: 33px;
+  opacity: 0.3;
+}
+.skills__item:nth-last-child(2), .skills__item:nth-child(2) {
+  opacity: 0.5;
+  font-size: 42px;
+}
+.skills__item:nth-last-child(3), .skills__item:nth-child(3) {
+  opacity: 0.8;
+  font-size: 47px;
+}
+.skills__item-icon {
+  width: 1em;
+  height: 0.75em;
 }/*# sourceMappingURL=style.css.map */
